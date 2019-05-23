@@ -1,13 +1,6 @@
-import express from 'express';
-import bodyParser from 'body-parser';
 import Database from './lib/db';
 import mockData from './mockData';
-
-// Setup the server
-const PORT = 3000;
-const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+import app from './expressServer';
 
 // Setup the database
 const db = new Database();
@@ -110,8 +103,3 @@ pokemon.getAllAnimals();
 pokemon.registerAnimal();
 pokemon.getAnimalSearch();
 pokemon.getAnimalId();
-
-// Start server
-app.listen(PORT, () => {
-  console.log(`The server is listening on port ${PORT}`);
-});

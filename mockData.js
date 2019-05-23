@@ -12,9 +12,9 @@ const cats = [
   ];
   
   const pokemons = [
-    { name: 'Snorlax', color: 'Blue/White', age: 2 },
-    { name: 'Aerodactyl', color: 'Grey/Purple', age: 3 },
-    { name: 'Kabutops', color: 'Brown/White', age: 6 },
+    { name: 'Snorlax', color: 'Blue', age: 2 },
+    { name: 'Aerodactyl', color: 'Grey', age: 3 },
+    { name: 'Kabutops', color: 'Brown', age: 6 },
   ];
   
   export default {cats, dogs, pokemons};
